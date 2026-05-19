@@ -42,8 +42,8 @@ export const products = [
   {
     name: "Clara de huevo liofilizada",
     subtitle: "85% proteina",
-    image: "/images/clara.png",
-    heroImage: "/images/clara-encab.png",
+    image: "/images/clara-encab2.png",
+    heroImage: "/images/clara-encab2.png",
     points: ["Baja en grasas", "Ideal fitness", "Perfecta para post entrenamiento"],
     nutrition: [
       { label: "Proteina", value: "85%" },
@@ -55,8 +55,8 @@ export const products = [
   {
     name: "Yema de huevo liofilizada",
     subtitle: "Energia natural",
-    image: "/images/yema.png",
-    heroImage: "/images/yema-encab.png",
+    image: "/images/yema-encab2.png",
+    heroImage: "/images/yema-encab2.png",
     points: [
       "Grasas saludables",
       "Snack keto",
