@@ -36,6 +36,20 @@ export const metadata: Metadata = {
     title: "Pop-eggs",
     description: "Snack de huevo liofilizado crocante, natural y alto en proteina.",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 144,
+        height: 42,
+        alt: "Pop-eggs Logo",
+      },
+      {
+        url: "/images/packaging-unified.png",
+        width: 1800,
+        height: 1200,
+        alt: "Pop-eggs Packaging",
+      },
+    ],
   },
 };
 
