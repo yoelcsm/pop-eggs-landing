@@ -2,6 +2,9 @@
 builder = "NIXPACKS"
 buildCommand = "npm install --legacy-peer-deps && npm run build"
 
+[variables]
+NIXPACKS_INSTALL_CMD = "npm install --legacy-peer-deps"
+
 [deploy]
 startCommand = "npm run start -- -p $PORT"
 restartPolicyType = "ON_FAILURE"
