@@ -81,7 +81,8 @@ export const recipeIdeas = [
 ];
 
 export const socialLinks = {
-  whatsapp: "https://wa.me/5491100000000",
+  whatsapp:
+    "https://wa.me/5491168400661?text=Hola%2C%20quiero%20comprar%20Pop-eggs.%20Me%20compartis%20info%20y%20precios%3F",
   instagram: "https://instagram.com/pop.eggs",
   buy: "#productos",
 };
