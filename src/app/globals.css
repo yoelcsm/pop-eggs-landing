@@ -3,19 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --brand-bg: #f8fbf8;
+  --brand-ink: #0b1420;
+  --brand-green: #0b7a33;
+  --brand-green-dark: #085928;
+  --brand-orange: #ff6a00;
+  --brand-orange-dark: #dd5700;
+  --brand-ice: #f0faf4;
+  --brand-warm: #fff4ea;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--brand-ink);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(11, 122, 51, 0.1), transparent 30%),
+    radial-gradient(circle at 88% 25%, rgba(255, 106, 0, 0.1), transparent 38%),
+    var(--brand-bg);
+  font-family: var(--font-sans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 12px 30px -20px rgba(11, 20, 32, 0.28);
+  }
+
+  .shadow-premium {
+    box-shadow: 0 26px 60px -28px rgba(11, 20, 32, 0.34);
+  }
 }
