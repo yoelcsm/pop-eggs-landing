@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { Download, ArrowLeft } from "lucide-react";
-import QRCode from "qrcode.react";
+import { QRCode } from "qrcode.react";
 import Link from "next/link";
 
 export default function QRPage() {
