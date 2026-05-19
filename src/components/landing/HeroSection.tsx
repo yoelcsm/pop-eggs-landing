@@ -13,13 +13,13 @@ export function HeroSection() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_0%,rgba(11,122,51,0.32),transparent_46%),radial-gradient(circle_at_85%_80%,rgba(255,106,0,0.12),transparent_45%)]" />
             <FadeIn>
               <div className="relative flex items-center gap-3">
-                <div className="overflow-hidden rounded-xl border border-white/20 bg-white/10 p-2 backdrop-blur">
+                <div className="overflow-hidden rounded-xl border border-white/20 bg-white/10 p-3 backdrop-blur">
                   <Image
                     src="/images/logo.png"
                     alt="Logo Pop-eggs"
                     width={144}
                     height={42}
-                    className="h-6 w-auto object-contain"
+                    className="h-12 w-auto object-contain"
                     priority
                   />
                 </div>
