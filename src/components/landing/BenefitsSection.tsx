@@ -6,8 +6,8 @@ export function BenefitsSection() {
     <Section id="beneficios" className="pt-16 sm:pt-20">
       <SectionHeading
         eyebrow="Beneficios"
-        title="Nutricion limpia para rendir mas"
-        description="Cada porcion de Pop-eggs fue pensada para quienes buscan un snack funcional sin ingredientes innecesarios."
+        title="Ingredientes reales. Beneficios reales."
+        description="Una nueva forma de consumir proteina y energia natural."
       />
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
         {benefits.map((benefit, index) => {
