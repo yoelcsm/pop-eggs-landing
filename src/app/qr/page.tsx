@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { Download, ArrowLeft } from "lucide-react";
-import { QRCode } from "qrcode.react";
+import { QRCodeCanvas } from "qrcode.react";
 import Link from "next/link";
 
 export default function QRPage() {
@@ -43,7 +43,7 @@ export default function QRPage() {
           {/* QR Code */}
           <div className="flex justify-center mb-8 bg-white rounded-2xl p-6 inline-flex w-full">
             <div ref={qrRef}>
-              <QRCode
+              <QRCodeCanvas
                 value={siteUrl}
                 size={280}
                 level="H"
