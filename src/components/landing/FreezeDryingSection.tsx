@@ -1,7 +1,7 @@
 import { Snowflake, Wind, ShieldCheck } from "lucide-react";
-import Image from "next/image";
 import { freezeDryingSteps, sectionText } from "@/data/landing-content";
 import { FadeIn, Section, SectionHeading } from "./ui";
+import { ZoomableImage } from "./ZoomableImage";
 
 const icons = [Snowflake, Wind, ShieldCheck];
 
@@ -37,17 +37,15 @@ export function FreezeDryingSection() {
 
         <FadeIn delay={0.2}>
           <div className="mt-6 rounded-3xl border border-brand-green/15 bg-white p-2 shadow-soft sm:p-3">
-            <div className="overflow-x-auto rounded-2xl">
-              <Image
-                src="/images/quees2.png"
-                alt="Proceso de liofilizacion Pop-eggs"
-                width={1400}
-                height={900}
-                className="h-auto w-[920px] max-w-none rounded-2xl object-contain sm:w-full sm:max-w-full"
-              />
-            </div>
-            <p className="mt-2 text-center text-xs font-medium text-brand-ink/60 sm:hidden">
-              Desliza horizontalmente para ver el detalle completo.
+            <ZoomableImage
+              src="/images/quees2.png"
+              alt="Proceso de liofilizacion Pop-eggs"
+              width={1400}
+              height={900}
+              previewClassName="h-auto w-full rounded-2xl object-contain"
+            />
+            <p className="mt-2 text-center text-xs font-medium text-brand-ink/60">
+              Toca la imagen para ampliar.
             </p>
           </div>
         </FadeIn>
