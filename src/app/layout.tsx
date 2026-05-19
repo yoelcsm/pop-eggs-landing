@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   description:
     "Pop-eggs es un snack de huevo liofilizado crocante, natural y alto en proteina. Innovacion alimenticia argentina.",
   icons: {
-    icon: "/images/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/logo.png", type: "image/png" },
+    ],
     apple: "/images/logo.png",
   },
   keywords: [
