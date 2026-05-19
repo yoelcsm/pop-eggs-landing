@@ -12,10 +12,22 @@ export function HeroSection() {
           <div className="relative overflow-hidden p-6 sm:p-8 md:p-10">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_0%,rgba(11,122,51,0.32),transparent_46%),radial-gradient(circle_at_85%_80%,rgba(255,106,0,0.12),transparent_45%)]" />
             <FadeIn>
-              <p className="relative inline-flex items-center gap-2 rounded-full border border-brand-green/35 bg-brand-green/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-brand-green">
-                <Sparkles size={14} />
-                Startup food tech
-              </p>
+              <div className="relative flex items-center gap-3">
+                <div className="overflow-hidden rounded-xl border border-white/20 bg-white/10 p-2 backdrop-blur">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Logo Pop-eggs"
+                    width={144}
+                    height={42}
+                    className="h-6 w-auto object-contain"
+                    priority
+                  />
+                </div>
+                <p className="inline-flex items-center gap-2 rounded-full border border-brand-green/35 bg-brand-green/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-brand-green">
+                  <Sparkles size={14} />
+                  Startup food tech
+                </p>
+              </div>
             </FadeIn>
             <FadeIn delay={0.05}>
               <h1 className="relative mt-5 max-w-lg text-balance text-4xl font-black uppercase leading-[0.95] text-white sm:text-5xl md:text-6xl">
