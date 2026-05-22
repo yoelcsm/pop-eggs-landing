@@ -1,9 +1,9 @@
-import { Snowflake, Wind, ShieldCheck } from "lucide-react";
-import { freezeDryingSteps, sectionText } from "@/data/landing-content";
+import { Flame, Package, ShieldCheck } from "lucide-react";
+import { freezeDryingHighlights, sectionText } from "@/data/landing-content";
 import { FadeIn, Section, SectionHeading } from "./ui";
 import { ZoomableImage } from "./ZoomableImage";
 
-const icons = [Snowflake, Wind, ShieldCheck];
+const icons = [Flame, Package, ShieldCheck];
 
 export function FreezeDryingSection() {
   return (
@@ -11,12 +11,12 @@ export function FreezeDryingSection() {
       <div className="rounded-[1.75rem] border border-brand-green/15 bg-brand-ice/70 p-6 sm:p-8">
         <SectionHeading
           eyebrow="Que es la liofilizacion"
-          title="Tecnologia que conserva lo mejor del huevo"
+          title="Como mejora el producto"
           description={sectionText.freezeDryingSummary}
         />
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {freezeDryingSteps.map((step, index) => {
+          {freezeDryingHighlights.map((step, index) => {
             const Icon = icons[index];
             return (
               <FadeIn key={step.title} delay={0.1 * index}>
@@ -24,9 +24,6 @@ export function FreezeDryingSection() {
                   <div className="inline-flex rounded-xl bg-brand-green/10 p-2 text-brand-green">
                     <Icon size={20} />
                   </div>
-                  <p className="mt-4 text-sm font-semibold uppercase tracking-[0.14em] text-brand-green">
-                    Paso {index + 1}
-                  </p>
                   <h3 className="mt-1 text-xl font-bold text-brand-ink">{step.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-brand-ink/70">{step.description}</p>
                 </article>
@@ -37,6 +34,9 @@ export function FreezeDryingSection() {
 
         <FadeIn delay={0.2}>
           <div className="mt-6 rounded-3xl border border-brand-green/15 bg-white p-2 shadow-soft sm:p-3">
+            <p className="px-3 pt-3 text-sm font-semibold uppercase tracking-[0.14em] text-brand-green/80 sm:px-4">
+              Proceso visual
+            </p>
             <ZoomableImage
               src="/images/quees2.png"
               alt="Proceso de liofilizacion Pop-eggs"

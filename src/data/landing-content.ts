@@ -20,21 +20,21 @@ export const benefits = [
   { title: "Snack saludable", icon: Leaf },
 ];
 
-export const freezeDryingSteps = [
+export const freezeDryingHighlights = [
   {
-    title: "Congelado",
+    title: "Sin calor agresivo",
     description:
-      "Se congela el huevo a baja temperatura para mantener su estructura y sabor natural.",
+      "El proceso trabaja a baja temperatura para cuidar mejor el sabor, la textura y la calidad del huevo.",
   },
   {
-    title: "Extraccion de agua",
+    title: "Mas liviano y practico",
     description:
-      "Se elimina el agua por sublimacion al vacio, sin usar calor agresivo.",
+      "Al retirar el agua, el producto queda crocante, facil de transportar y listo para consumir o sumar a recetas.",
   },
   {
-    title: "Conservacion de nutrientes",
+    title: "Conserva lo importante",
     description:
-      "Se conserva el perfil nutricional y se obtiene una textura crocante y liviana.",
+      "Ayuda a mantener el perfil nutricional del huevo sin depender de conservantes ni procesos termicos intensos.",
   },
 ];
 
@@ -97,7 +97,7 @@ export const sectionText = {
   heroTitle: "Snack de huevo liofilizado",
   heroSubtitle: "Crocante, natural y alto en proteina",
   freezeDryingSummary:
-    "La liofilizacion conserva nutrientes, sabor y textura sin necesidad de conservantes.",
+    "La imagen de abajo muestra el proceso completo; arriba te resumimos por que ese proceso mejora el producto final.",
   finalCta: "Proba el snack mas innovador del momento",
 };
 
